@@ -647,16 +647,15 @@ header {
 
 footer {
   width: 100%;
-  position: absolute;
   bottom: 0;
 }
 
 .footer__menu {
   display: flex;
   align-content: center;
-  justify-content: space-between;
-  padding: 0em 2em;
-  color: #6D6E71;
+  justify-content: space-around;
+  height: 70px;
+  background: grey;
 }
 
 /* Posts and pages

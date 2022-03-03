@@ -1,3 +1,5 @@
+
+
 header{
     width: 100%;
 }
@@ -12,16 +14,29 @@ header{
 
 }
 
-.navbar__menu{    
+.navbar__menu{
     display: flex;
     align-content: center;
     justify-content: space-around;
     width: 25%;
-        
-    
+
+
     a{
         align-self: center;
-        color:$color__link__nav;
+        color: white;
         text-decoration: none;
     }
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.footer__menu{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0em 2em;
+  color: $color__footer;
 }

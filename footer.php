@@ -12,9 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
 
+		<div class="footer__menu">
+			<p> Designed by GDSSA </p>
+			<img src="<?php echo get_template_directory_uri(); ?>/img/footer__logo.svg" alt="footer logo" />
+			<p> © VCD Senior Exhibition 2022 </p>
 		</div><!-- .site-info -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
