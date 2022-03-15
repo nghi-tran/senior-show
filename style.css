@@ -391,6 +391,8 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-style: normal;
 }
 
 h1,
@@ -459,6 +461,14 @@ big {
 body {
   background: #fff;
   width: 100%;
+}
+
+.main--counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: stretch;
 }
 
 hr {
@@ -657,6 +667,69 @@ footer {
   justify-content: space-between;
   padding: 0em 2em;
   color: #6D6E71;
+}
+
+/* Navigation
+--------------------------------------------- */
+h2 {
+  font-size: 12.5vh;
+  margin: 0;
+}
+
+.count-down__unit {
+  font-size: 20px;
+  margin: -20px;
+}
+
+.count-down__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15%;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+.count-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.5%;
+}
+
+.show__subtitle p {
+  margin: 0;
+}
+
+.hours-container {
+  padding-bottom: 7em;
+}
+
+.secs-container {
+  padding-bottom: 7em;
+}
+
+.splash__lockup {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+  margin-top: -2em;
+}
+.splash__lockup img {
+  margin-left: -2.5em;
+  width: 70%;
+  max-height: 90%;
 }
 
 /* Posts and pages

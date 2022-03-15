@@ -1,4 +1,12 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
-    width: 100%;
+    width: 100%;    
+}
+
+.main--counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: stretch;
 }
