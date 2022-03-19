@@ -1,44 +1,66 @@
 h2{
-    font-size: $counter;
+    font-size: max(90px, 9vw);
     margin: 0;
+    
+    @media screen and (max-width:600px){
+        font-size: 70px;
+    }
 }
 
 .count-down__unit{
-    font-size: $counter-unit;
-    margin: -20px;
+    font-size: max(16px, 2vw);
+    margin: -20%;
 }
 
 .count-down__wrapper{
     display: flex;
-    justify-content: flex-start;
-    gap:15%;
+    justify-content: center;
+    gap:5%;
     flex-direction: row;
     align-items: center;
     margin: auto;
     width: 90%;
+    
+    @media screen and (min-width: 2000px){
+        margin-top: 1%;
+    }
+    
+    @media screen and (max-width:600px){
+        width: 70%;
+    }
+    
+
 }
 
 .count-down{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap:10%;
     align-content: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    
+    @media screen and (max-width:600px){
+        flex-direction: column;
+        
+        .hours-container{
+            padding-bottom: 0;
+        }
+        
+        .secs-container{
+            padding-bottom: 0;
+        }
+    }
 }
 
 .timer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 10.5%;
+    width: 10vw;
 }
 
-.show__subtitle{
-    p{
-        margin: 0;
-    }
-}
 
 .days-container{
     
@@ -56,16 +78,52 @@ h2{
     padding-bottom: 7em;
 }
 
-.splash__lockup{
+.splash-subtitle{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     margin: auto;
-    margin-top: -2em;
+    
+    @media screen and (max-width:1110px){
+        flex-direction: column;
+        height: 150%;
+        gap:3em;
+        
+        .splash__lockup{
+            max-width: 800px;
+        }
+        
+        .show__subtitle{
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:600px){
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        
+        .show__subtitle{
+            text-align: left;
+        }
+    }
+}
+
+.splash__lockup{
+    width: 80%;
     
     img{
-        margin-left: -2.5em;
-        width: 70%;
+        margin-left: -2%;
+        width: 100%;
         max-height: 90%;
+    }
+}
+
+.show__subtitle{
+    p{
+        margin: 0;
     }
 }

@@ -1,6 +1,7 @@
 body {
 	background: $color__background-body; // Fallback for when there is no custom background color defined.
-    width: 100%;    
+    width: 100%; 
+    color: black;
 }
 
 .main--counter{
@@ -9,4 +10,8 @@ body {
     justify-content: flex-end;
     height: 100%;
     align-items: stretch;
+    
+    @media screen and (max-width:600px){
+        flex-direction: row-reverse;
+    }
 }

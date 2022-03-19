@@ -24,11 +24,6 @@ get_header();
                 </div>
             </div>
             
-            <div class=show__subtitle>
-                <p>Arizona State Universtiy</p>
-                <p>Visual Communication Design</p>
-                <p>Senior Exhibition 2022</p>
-            </div>
         </div>
         
         <h2 id="end"></h2>
@@ -67,8 +62,15 @@ get_header();
                 }, 1000);
         </script>
         
-        <div class="splash__lockup">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/splash__lockup.png" alt="footer logo" />
+        <div class="splash-subtitle">
+            <div class="splash__lockup">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/splash__lockup.png" alt="POV Horizontal Logo" />
+            </div>
+            <div class=show__subtitle>
+                <p>Arizona State Universtiy</p>
+                <p>Visual Communication Design</p>
+                <p>Senior Exhibition 2022</p>
+            </div>
         </div>
         
 	</main><!-- #main -->
