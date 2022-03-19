@@ -27,15 +27,17 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'seniorshow' ); ?></a>
 
-	<header>
-
-        <div class="navbar">
-            <div class="navbar__menu">
-                <a href="#">About</a>
-                <a href="#">Donors</a>
-                <a href="#">Social Issues</a>
-            </div>
-        </div>
-
-
-	</header><!-- #masthead -->
+<header>
+    <div class="navbar__logo">
+        <img src="" alt=""> <!--Need to call image here-->
+    </div>
+    <div class="navbar__navigation">
+       <input type="checkbox" class="navbar__toggle-menu">
+       <div class="navbar__hamburger"></div>
+        <ul class="navbar__menu">
+            <li><a href="">About</a></li>
+            <li><a href="">Social Issues</a></li>
+            <li><a href="">Donors</a></li>
+        </ul>
+    </div>
+</header>
