@@ -1,11 +1,13 @@
+/*
 h2{
     font-size: max(90px, 9vw);
     margin: 0;
-    
+
     @media screen and (max-width:600px){
         font-size: 70px;
     }
 }
+*/
 
 .count-down__unit{
     font-size: max(16px, 2vw);
@@ -20,15 +22,15 @@ h2{
     align-items: center;
     margin: auto;
     width: 90%;
-    
+
     @media screen and (min-width: 2000px){
         margin-top: 1%;
     }
-    
+
     @media screen and (max-width:600px){
         width: 70%;
     }
-    
+
 
 }
 
@@ -40,14 +42,14 @@ h2{
     align-content: center;
     align-items: center;
     width: 100%;
-    
+
     @media screen and (max-width:600px){
         flex-direction: column;
-        
+
         .hours-container{
             padding-bottom: 0;
         }
-        
+
         .secs-container{
             padding-bottom: 0;
         }
@@ -63,7 +65,7 @@ h2{
 
 
 .days-container{
-    
+
 }
 
 .hours-container{
@@ -71,7 +73,7 @@ h2{
 }
 
 .mins-container{
-    
+
 }
 
 .secs-container{
@@ -85,27 +87,27 @@ h2{
     align-items: center;
     width: 90%;
     margin: auto;
-    
+
     @media screen and (max-width:1110px){
         flex-direction: column;
         height: 150%;
         gap:3em;
-        
+
         .splash__lockup{
             max-width: 800px;
         }
-        
+
         .show__subtitle{
             text-align: center;
         }
     }
-    
+
     @media screen and (max-width:600px){
         flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: flex-start;
         margin: 0;
-        
+
         .show__subtitle{
             text-align: left;
         }
@@ -114,7 +116,7 @@ h2{
 
 .splash__lockup{
     width: 80%;
-    
+
     img{
         margin-left: -2%;
         width: 100%;

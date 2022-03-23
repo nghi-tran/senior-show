@@ -1,0 +1,36 @@
+
+.about {
+
+}
+
+.testing-potato {
+  color: red;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 1.25em;
+  padding: 2%;
+
+  .about__class-photo {
+    grid-column: 1/13;
+  }
+
+  .show-about {
+    grid-column: 1/13;
+
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 1.25em;
+
+    .show-about__title {
+      grid-column: 1/5;
+    }
+
+    .show-about__description {
+      grid-column: 5/13;
+
+    }
+  }
+}

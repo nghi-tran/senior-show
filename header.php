@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="https://use.typekit.net/cac1eef.css">
-    
+
 	<?php wp_head(); ?>
 </head>
 
@@ -28,16 +28,17 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'seniorshow' ); ?></a>
 
 <header>
-    <div class="navbar__logo">
-        <img src="" alt=""> <!--Need to call image here-->
+     <div class="navbar__logo">
+        <img src="" alt="">
     </div>
     <div class="navbar__navigation">
        <input type="checkbox" class="navbar__toggle-menu">
        <div class="navbar__hamburger"></div>
         <ul class="navbar__menu">
-            <li><a href="">About</a></li>
+            <li><a href="front-page.php">About</a></li>
             <li><a href="">Social Issues</a></li>
             <li><a href="">Donors</a></li>
         </ul>
-    </div>
+    </div> 
+
 </header>

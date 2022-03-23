@@ -395,8 +395,16 @@ textarea {
   font-style: normal;
 }
 
-h1,
-h2,
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.75em;
+  font-weight: normal;
+}
+
 h3,
 h4,
 h5,
@@ -521,6 +529,7 @@ object {
 img {
   height: auto;
   max-width: 100%;
+  border-radius: 10px;
 }
 
 figure {
@@ -796,16 +805,16 @@ footer {
 
 /* Navigation
 --------------------------------------------- */
-h2 {
-  font-size: max(90px, 9vw);
-  margin: 0;
-}
-@media screen and (max-width: 600px) {
-  h2 {
-    font-size: 70px;
-  }
-}
+/*
+h2{
+    font-size: max(90px, 9vw);
+    margin: 0;
 
+    @media screen and (max-width:600px){
+        font-size: 70px;
+    }
+}
+*/
 .count-down__unit {
   font-size: max(16px, 2vw);
   margin: -20%;
@@ -911,6 +920,34 @@ h2 {
 
 .show__subtitle p {
   margin: 0;
+}
+
+/* About
+--------------------------------------------- */
+.testing-potato {
+  color: red;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 1.25em;
+  padding: 2%;
+}
+.about__container .about__class-photo {
+  grid-column: 1/13;
+}
+.about__container .show-about {
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 1.25em;
+}
+.about__container .show-about .show-about__title {
+  grid-column: 1/5;
+}
+.about__container .show-about .show-about__description {
+  grid-column: 5/13;
 }
 
 /* Posts and pages
