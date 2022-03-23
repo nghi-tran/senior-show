@@ -1,3 +1,4 @@
+
 .counter__number{
     font-size: max(40px, 7vw);
     margin: 0;
@@ -44,7 +45,7 @@
         margin-bottom: 5%;
         width: 100%;
     }
-    
+
 
 }
 
@@ -66,11 +67,13 @@
     @media screen and (max-width:600px){
         
         margin-top: 2%;
+        flex-direction: column;
+
         .hours-container{
             padding-bottom: 0;
             margin-top: -40px;
         }
-        
+
         .secs-container{
             padding-bottom: 0;
             margin-top: -40px;
@@ -92,7 +95,7 @@
 
 
 .days-container{
-    
+
 }
 
 .hours-container{
@@ -100,7 +103,7 @@
 }
 
 .mins-container{
-    
+
 }
 
 .secs-container{
@@ -120,7 +123,7 @@
     @media screen and (max-width:1110px){
         flex-direction: column;
         gap:3em;
-        
+
         .splash__lockup{
             max-width: 800px;
         }
@@ -135,7 +138,7 @@
         }
         
     }
-    
+
     @media screen and (max-width:600px){
         justify-content: flex-start;
         align-items: center;
@@ -207,6 +210,7 @@
         }
         
     }
+
     }
 }
 
