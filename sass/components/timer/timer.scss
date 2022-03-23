@@ -1,8 +1,19 @@
+<<<<<<< HEAD
 /*
 h2{
     font-size: max(90px, 9vw);
     margin: 0;
 
+=======
+.counter__number{
+    font-size: max(40px, 10vw);
+    margin: 0;
+    
+    @media screen and (max-width:1050px){
+        font-size: max(36px, 12vw);
+    }
+    
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
     @media screen and (max-width:600px){
         font-size: 70px;
     }
@@ -21,8 +32,15 @@ h2{
     flex-direction: row;
     align-items: center;
     margin: auto;
+<<<<<<< HEAD
     width: 90%;
 
+=======
+    width: 70%;
+    z-index: 10;
+
+    
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
     @media screen and (min-width: 2000px){
         margin-top: 1%;
     }
@@ -41,8 +59,13 @@ h2{
     gap:10%;
     align-content: center;
     align-items: center;
+<<<<<<< HEAD
     width: 100%;
 
+=======
+    width: 80%;
+    
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
     @media screen and (max-width:600px){
         flex-direction: column;
 
@@ -87,7 +110,13 @@ h2{
     align-items: center;
     width: 90%;
     margin: auto;
+<<<<<<< HEAD
 
+=======
+    margin-top: -2%;
+    z-index: 1;
+    
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
     @media screen and (max-width:1110px){
         flex-direction: column;
         height: 150%;
@@ -114,6 +143,7 @@ h2{
     }
 }
 
+<<<<<<< HEAD
 .splash__lockup{
     width: 80%;
 
@@ -121,10 +151,27 @@ h2{
         margin-left: -2%;
         width: 100%;
         max-height: 90%;
+=======
+.splash__container{
+    width: auto;
+}
+
+.splash__video{
+    margin: auto;
+        
+        video{
+            width: 60vw;
+        }
+
+    @media screen and (max-width: 1050px){
+        video{
+            width: 80vw;
+        }
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
     }
 }
 
-.show__subtitle{
+.subtitle{
     p{
         margin: 0;
     }

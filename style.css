@@ -805,10 +805,27 @@ footer {
 
 /* Navigation
 --------------------------------------------- */
+<<<<<<< HEAD
 /*
 h2{
     font-size: max(90px, 9vw);
     margin: 0;
+=======
+.counter__number {
+  font-size: max(40px, 10vw);
+  margin: 0;
+}
+@media screen and (max-width: 1050px) {
+  .counter__number {
+    font-size: max(36px, 12vw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .counter__number {
+    font-size: 70px;
+  }
+}
+>>>>>>> 11b8f6c0cbbe0cc497f7c3e3ea74c9664d315995
 
     @media screen and (max-width:600px){
         font-size: 70px;
@@ -827,7 +844,8 @@ h2{
   flex-direction: row;
   align-items: center;
   margin: auto;
-  width: 90%;
+  width: 70%;
+  z-index: 10;
 }
 @media screen and (min-width: 2000px) {
   .count-down__wrapper {
@@ -847,7 +865,7 @@ h2{
   gap: 10%;
   align-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 @media screen and (max-width: 600px) {
   .count-down {
@@ -883,6 +901,8 @@ h2{
   align-items: center;
   width: 90%;
   margin: auto;
+  margin-top: -2%;
+  z-index: 1;
 }
 @media screen and (max-width: 1110px) {
   .splash-subtitle {
@@ -909,16 +929,23 @@ h2{
   }
 }
 
-.splash__lockup {
-  width: 80%;
-}
-.splash__lockup img {
-  margin-left: -2%;
-  width: 100%;
-  max-height: 90%;
+.splash__container {
+  width: auto;
 }
 
-.show__subtitle p {
+.splash__video {
+  margin: auto;
+}
+.splash__video video {
+  width: 60vw;
+}
+@media screen and (max-width: 1050px) {
+  .splash__video video {
+    width: 80vw;
+  }
+}
+
+.subtitle p {
   margin: 0;
 }
 
