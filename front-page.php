@@ -7,19 +7,19 @@ get_header();
         <div class="count-down__wrapper">
             <div class="count-down">
                 <div class="timer days-container">
-                    <h2 id="days"></h2>
+                    <h2 id="days" class="counter__number"></h2>
                     <p class="count-down__unit">Days</p>
                 </div>
                 <div class="timer hours-container">
-                    <h2 id="hours"></h2>
+                    <h2 id="hours" class="counter__number"></h2>
                     <p class="count-down__unit">Hours</p>
                 </div>
                 <div class="timer mins-container">
-                    <h2 id="mins"></h2>
+                    <h2 id="mins" class="counter__number"></h2>
                     <p class="count-down__unit">Minutes</p>
                 </div>
                 <div class="timer secs-container">
-                    <h2 id="secs"></h2>
+                    <h2 id="secs" class="counter__number"></h2>
                     <p class="count-down__unit">Seconds</p>
                 </div>
             </div>
@@ -63,10 +63,14 @@ get_header();
         </script>
         
         <div class="splash-subtitle">
-            <div class="splash__lockup">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/splash__lockup.png" alt="POV Horizontal Logo" />
+            <div class="splash__container">
+                <div class="splash__video">
+                    <video autoplay loop muted>
+                        <source src= "<?php echo get_template_directory_uri(); ?>/vid/desktop_animation.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-            <div class=show__subtitle>
+            <div class=subtitle>
                 <p>Arizona State Universtiy</p>
                 <p>Visual Communication Design</p>
                 <p>Senior Exhibition 2022</p>
