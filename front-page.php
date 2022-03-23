@@ -26,8 +26,6 @@ get_header();
             
         </div>
         
-        <h2 id="end"></h2>
-        
         <script>
             // The data/time we want to countdown to
                 var countDownDate = new Date("May 5, 2022 16:00:00").getTime();
@@ -67,13 +65,18 @@ get_header();
                 <div class="splash__video">
                     <video autoplay loop muted>
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/desktop_animation.mp4" type="video/mp4">
+                    </video>                    
+                    
+                    <video id="video--mobile" autoplay loop muted>
+                        <source src= "<?php echo get_template_directory_uri(); ?>/vid/mobile_animation.mp4" type="video/mp4">
                     </video>
+                    
                 </div>
             </div>
             <div class=subtitle>
-                <p>Arizona State Universtiy</p>
-                <p>Visual Communication Design</p>
-                <p>Senior Exhibition 2022</p>
+                <p class="subtitle__copy">Arizona State Universtiy</p>
+                <p class="subtitle__copy">Visual Communication Design</p>
+                <p class="subtitle__copy">Senior Exhibition 2022</p>
             </div>
         </div>
         
