@@ -31,6 +31,12 @@
      <div class="navbar__logo">
         <img src="" alt="">
     </div>
+    
+    <?php
+        wp_nav_menu( array( 
+        'theme_location' => 'my-custom-menu', 
+        'container_class' => 'navbar__navigation' ) ); 
+    ?>
     <div class="navbar__navigation">
        <input type="checkbox" class="navbar__toggle-menu">
        <div class="navbar__hamburger"></div>
