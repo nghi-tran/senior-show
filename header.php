@@ -35,10 +35,10 @@
        <input type="checkbox" class="navbar__toggle-menu">
        <div class="navbar__hamburger"></div>
         <ul class="navbar__menu">
-            <li><a href="front-page.php">About</a></li>
+            <li><a href=""> About </a></li>
             <li><a href="">Social Issues</a></li>
             <li><a href="">Donors</a></li>
         </ul>
-    </div> 
+    </div>
 
 </header>

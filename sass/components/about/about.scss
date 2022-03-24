@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
-  padding: 2%;
+  padding: 2% 2% 5% 2%;
 
   .about__class-photo {
     grid-column: 1/13;
@@ -33,4 +33,95 @@
 
     }
   }
+
+
+  .show-location {
+    grid-column: 1/13;
+
+    .show-location__description-wrapper {
+      grid-column: 1/13;
+
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-gap: 1.25em;
+
+      .show-location__title {
+        grid-column: 1/5;
+      }
+
+      .show-location__venue {
+        grid-column: 5/8;
+        color: $color__grey;
+      }
+
+      .show-location__address {
+        grid-column: 8/13;
+        color: $color__grey;
+      }
+    }
+
+    .show-location__img-wrapper {
+      grid-column: 1/13;
+
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-gap: 1.25em;
+
+      .show-location__img-1 {
+        grid-column: 1/5;
+        img {
+          width: 100%;
+        }
+      }
+
+      .show-location__img-2 {
+        grid-column: 5/9;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .show-date {
+    grid-column: 1/13;
+
+    .show-date__description-wrapper {
+      grid-column: 1/13;
+
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-gap: 1.25em;
+
+      .show-date__title {
+        grid-column: 1/5;
+      }
+
+      .show-date__duration {
+        grid-column: 5/8;
+        color: $color__grey;
+      }
+
+      .show-date__time {
+        grid-column: 8/13;
+        color: $color__grey;
+      }
+    }
+
+    .show-date__content-wrapper {
+      grid-column: 1/13;
+
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-gap: 1.25em;
+
+      .show-date__img-1 {
+        grid-column: 5/13;
+        color: $color__grey;
+
+      }
+    }
+  }
+
 }
