@@ -7,26 +7,24 @@ get_header();
         <div class="count-down__wrapper">
             <div class="count-down">
                 <div class="timer days-container">
-                    <h2 id="days" class="counter__number"></h2>
+                    <h1 id="days" class="counter__number"></h1>
                     <p class="count-down__unit">Days</p>
                 </div>
                 <div class="timer hours-container">
-                    <h2 id="hours" class="counter__number"></h2>
+                    <h1 id="hours" class="counter__number"></h1>
                     <p class="count-down__unit">Hours</p>
                 </div>
                 <div class="timer mins-container">
-                    <h2 id="mins" class="counter__number"></h2>
+                    <h1 id="mins" class="counter__number"></h1>
                     <p class="count-down__unit">Minutes</p>
                 </div>
                 <div class="timer secs-container">
-                    <h2 id="secs" class="counter__number"></h2>
+                    <h1 id="secs" class="counter__number"></h1>
                     <p class="count-down__unit">Seconds</p>
                 </div>
             </div>
 
         </div>
-
-        <h2 id="end"></h2>
 
         <script>
             // The data/time we want to countdown to
@@ -67,13 +65,18 @@ get_header();
                 <div class="splash__video">
                     <video autoplay loop muted>
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/desktop_animation.mp4" type="video/mp4">
+                    </video>                    
+                    
+                    <video id="video--mobile" autoplay loop muted>
+                        <source src= "<?php echo get_template_directory_uri(); ?>/vid/mobile_animation.mp4" type="video/mp4">
                     </video>
+                    
                 </div>
             </div>
             <div class=subtitle>
-                <p>Arizona State Universtiy</p>
-                <p>Visual Communication Design</p>
-                <p>Senior Exhibition 2022</p>
+                <p class="subtitle__copy">Arizona State Universtiy</p>
+                <p class="subtitle__copy">Visual Communication Design</p>
+                <p class="subtitle__copy">Senior Exhibition 2022</p>
             </div>
         </div>
 

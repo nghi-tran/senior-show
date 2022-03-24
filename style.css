@@ -480,13 +480,18 @@ body {
 .main--counter {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   height: 100%;
   align-items: stretch;
 }
+@media screen and (max-width: 1100px) {
+  .main--counter {
+    height: 75vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .main--counter {
-    flex-direction: row-reverse;
+    height: 87vh;
   }
 }
 
@@ -799,6 +804,13 @@ footer {
   background-color: white;
   bottom: 0;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    position: initial;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+}
 
 .footer__menu {
   display: flex;
@@ -807,21 +819,31 @@ footer {
   padding: 0em 2em;
   color: #6D6E71;
 }
+@media screen and (max-width: 600px) {
+  .footer__menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .footer__menu p {
+    margin: 10px;
+  }
+}
 
 /* Navigation
 --------------------------------------------- */
 .counter__number {
-  font-size: max(40px, 10vw);
+  font-size: max(40px, 7vw);
   margin: 0;
 }
 @media screen and (max-width: 1050px) {
   .counter__number {
-    font-size: max(36px, 12vw);
+    font-size: max(36px, 13.5vw);
   }
 }
 @media screen and (max-width: 600px) {
   .counter__number {
-    font-size: 70px;
+    font-size: max(24px, 12.5vw);
   }
 }
 
@@ -845,9 +867,19 @@ footer {
     margin-top: 1%;
   }
 }
+@media screen and (max-width: 1050px) {
+  .count-down__wrapper {
+    margin-top: 15%;
+    width: 90%;
+    gap: 2.5%;
+  }
+}
 @media screen and (max-width: 600px) {
   .count-down__wrapper {
-    width: 70%;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
   }
 }
 
@@ -859,16 +891,31 @@ footer {
   align-content: center;
   align-items: center;
   width: 80%;
+  margin-bottom: 7.5%;
+}
+@media screen and (max-width: 1050px) {
+  .count-down {
+    width: 100%;
+    gap: 12%;
+  }
 }
 @media screen and (max-width: 600px) {
   .count-down {
+    margin-top: 2%;
     flex-direction: column;
   }
   .count-down .hours-container {
     padding-bottom: 0;
+    margin-top: -40px;
   }
   .count-down .secs-container {
     padding-bottom: 0;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 600px) and (max-height: 800px) {
+  .count-down {
+    margin-bottom: 2%;
   }
 }
 
@@ -894,31 +941,41 @@ footer {
   align-items: center;
   width: 90%;
   margin: auto;
-  margin-top: -2%;
-  z-index: 1;
+  margin-top: -7%;
+  z-index: 0;
 }
 @media screen and (max-width: 1110px) {
   .splash-subtitle {
     flex-direction: column;
-    height: 150%;
     gap: 3em;
   }
   .splash-subtitle .splash__lockup {
     max-width: 800px;
   }
-  .splash-subtitle .show__subtitle {
+  .splash-subtitle .subtitle {
     text-align: center;
+  }
+  .splash-subtitle .subtitle .subtitle__copy {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {
   .splash-subtitle {
-    flex-direction: column-reverse;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1em;
   }
-  .splash-subtitle .show__subtitle {
-    text-align: left;
+  .splash-subtitle .subtitle {
+    text-align: cetner;
+  }
+  .splash-subtitle .subtitle .subtitle__copy {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) and (min-height: 800px) {
+  .splash-subtitle {
+    gap: 1.75em;
   }
 }
 
@@ -932,9 +989,46 @@ footer {
 .splash__video video {
   width: 60vw;
 }
+.splash__video #video--mobile {
+  display: none;
+}
 @media screen and (max-width: 1050px) {
   .splash__video video {
     width: 80vw;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) {
+  .splash__video video {
+    display: none;
+  }
+  .splash__video #video--mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) and (max-width: 600px) {
+  .splash__video #video--mobile {
+    display: block;
+    height: 55vh;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) and (max-width: 600px) and (max-height: 600px) {
+  .splash__video #video--mobile {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) and (max-width: 600px) and (min-height: 800px) {
+  .splash__video #video--mobile {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) and (max-width: 300px) and (max-height: 700px) {
+  .splash__video #video--mobile {
+    height: 55vh;
+  }
+}
+@media screen and (max-width: 1050px) and (max-width: 600px) and (max-width: 600px) and (max-height: 750px) {
+  .splash__video #video--mobile {
+    height: 50vh;
   }
 }
 
