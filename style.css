@@ -902,7 +902,7 @@ footer {
 @media screen and (max-width: 600px) {
   .count-down {
     margin-top: 2%;
-    flex-direction: column;
+    flex-direction: row;
   }
   .count-down .hours-container {
     padding-bottom: 0;
