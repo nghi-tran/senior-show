@@ -1,3 +1,8 @@
+<?php
+    /*
+     Template Name: About Page
+    */
+?>
 
 <?php
 get_header();
@@ -20,17 +25,19 @@ get_header();
 						<div class="show-about__description">
 							<div class="show-about__description-paragraph">
 								<h2>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-									non proident, sunt in culpa qui officia deserunt.
+									The Graphic Design Senior Student Association (GDSSA) is the senior
+									class in the Visual Communication Design Program at Arizona State
+									University. We are a resilient group of 44 passionate designers who
+									have persevered through online learning and the pandemic, and are
+									now taking our first steps out into the real world. This year commemorates
+									the 30th Annual Senior Exhibition, the culmination of a year’s worth of
+									research, thinking, and design around social issues we are passionate
+									about to raise awareness and spark conversations.
 								</h2>
 							</div>
 
 							<div class="about__class-photo">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/show-about-1.png" alt="POV Horizontal Logo" />
+									<img src="<?php echo get_template_directory_uri(); ?>/img/show-about.jpg" alt="POV Horizontal Logo" />
 							</div>
 						</div>
 
@@ -78,10 +85,10 @@ get_header();
 						<div class="show-date__content-wrapper">
 							<div class="show-date__img-1">
 									<h2>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-										Fermentum dui faucibus in ornare. Rhoncus dolor purus non enim
-										praesent elementum facilisis.
+										We are delighted to invite you to share this experience with us
+										as we explore the intricacies of our society and celebrate the
+										work of our graduating seniors.
+
 									</h2>
 							</div>
 						</div>

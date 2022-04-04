@@ -1,4 +1,10 @@
 <?php
+    /*
+     Template Name: Front Page
+    */
+?>
+
+<?php
 get_header();
 ?>
 
@@ -65,12 +71,12 @@ get_header();
                 <div class="splash__video">
                     <video autoplay loop muted>
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/desktop_animation.mp4" type="video/mp4">
-                    </video>                    
-                    
+                    </video>
+
                     <video id="video--mobile" autoplay loop muted>
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/mobile_animation.mp4" type="video/mp4">
                     </video>
-                    
+
                 </div>
             </div>
             <div class=subtitle>

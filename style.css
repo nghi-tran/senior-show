@@ -87,7 +87,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0em 0;
 }
 
 /* Grouping content
@@ -1038,10 +1038,6 @@ footer {
 
 /* About
 --------------------------------------------- */
-.testing-potato {
-  color: red;
-}
-
 .about__container {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1056,12 +1052,28 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
+  padding: 0em 0;
 }
-.about__container .show-about .show-about__title {
-  grid-column: 1/5;
-}
-.about__container .show-about .show-about__description {
-  grid-column: 5/13;
+@media screen and (max-width: 800px) {
+  .about__container .show-about {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+  }
+  .about__container .show-about .show-about__title {
+    padding-top: 0;
+    margin: 0px;
+  }
+  .about__container .show-about .show-about__title h1 {
+    font-size: 2em;
+  }
+  .about__container .show-about .show-about__description .show-about__description-paragraph {
+    padding-top: 0em;
+    padding-bottom: 0.5em;
+  }
+  .about__container .show-about .show-about__description .show-about__description-paragraph h2 {
+    font-size: 1.25em;
+  }
 }
 .about__container .show-location {
   grid-column: 1/13;
@@ -1071,6 +1083,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
+  padding-bottom: 2.5em;
 }
 .about__container .show-location .show-location__description-wrapper .show-location__title {
   grid-column: 1/5;
@@ -1078,10 +1091,12 @@ footer {
 .about__container .show-location .show-location__description-wrapper .show-location__venue {
   grid-column: 5/8;
   color: #6D6E71;
+  padding-top: 1em;
 }
 .about__container .show-location .show-location__description-wrapper .show-location__address {
   grid-column: 8/13;
   color: #6D6E71;
+  padding-top: 1em;
 }
 .about__container .show-location .show-location__img-wrapper {
   grid-column: 1/13;
@@ -1101,6 +1116,35 @@ footer {
 .about__container .show-location .show-location__img-wrapper .show-location__img-2 img {
   width: 100%;
 }
+@media screen and (max-width: 800px) {
+  .about__container .show-location {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+  }
+  .about__container .show-location .show-location__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    padding-bottom: 1.25em;
+  }
+  .about__container .show-location .show-location__description-wrapper h1 {
+    font-size: 2em;
+  }
+  .about__container .show-location .show-location__description-wrapper h2 {
+    font-size: 1.25em;
+  }
+  .about__container .show-location .show-location__description-wrapper .show-location__venue {
+    padding-top: 0em;
+  }
+  .about__container .show-location .show-location__description-wrapper .show-location__address {
+    padding-top: 0em;
+  }
+  .about__container .show-location .show-location__img-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about__container .show-date {
   grid-column: 1/13;
 }
@@ -1116,10 +1160,12 @@ footer {
 .about__container .show-date .show-date__description-wrapper .show-date__duration {
   grid-column: 5/8;
   color: #6D6E71;
+  padding-top: 1em;
 }
 .about__container .show-date .show-date__description-wrapper .show-date__time {
   grid-column: 8/13;
   color: #6D6E71;
+  padding-top: 1em;
 }
 .about__container .show-date .show-date__content-wrapper {
   grid-column: 1/13;
@@ -1130,6 +1176,54 @@ footer {
 .about__container .show-date .show-date__content-wrapper .show-date__img-1 {
   grid-column: 5/13;
   color: #6D6E71;
+}
+@media screen and (max-width: 800px) {
+  .about__container .show-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+  }
+  .about__container .show-date .show-date__description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0em;
+    padding-bottom: 1.25em;
+  }
+  .about__container .show-date .show-date__description-wrapper h1 {
+    font-size: 2em;
+  }
+  .about__container .show-date .show-date__description-wrapper h2 {
+    font-size: 1.25em;
+  }
+  .about__container .show-date .show-date__description-wrapper .show-date__duration {
+    padding-top: 0em;
+  }
+  .about__container .show-date .show-date__description-wrapper .show-date__time {
+    padding-top: 0em;
+  }
+  .about__container .show-date .show-date__content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__container .show-date .show-date__content-wrapper h1 {
+    font-size: 2em;
+  }
+  .about__container .show-date .show-date__content-wrapper h2 {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .about__container h1 {
+    font-size: 2em;
+  }
+  .about__container h2 {
+    font-size: 1.25em;
+  }
 }
 
 /* Posts and pages
