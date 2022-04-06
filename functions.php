@@ -183,3 +183,9 @@ function wpb_custom_new_menu() {
 }
 add_action( 'init', 'wpb_custom_new_menu' );
 
+function tutsplus_burger_menu_scripts() {
+     
+    wp_enqueue_script( 'burger-menu-script', get_stylesheet_directory_uri() . '/js/burger-menu.js', array( 'jquery' ) );
+  
+}
+add_action( 'wp_enqueue_scripts', 'tutsplus_burger_menu_scripts' );
