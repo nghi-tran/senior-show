@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<div class="entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,7 +19,7 @@
 		endif;
         ?>
         
-	</header><!-- .entry-header -->
+	</div><!-- .entry-header -->
 
 	<div class="entry-content">
         <?php
@@ -57,15 +57,6 @@
                 <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
             <?php endif; ?>
             
-            <?php
-            $icon = $bioHead['icon'];
-
-            // Create a comma-separated list from selected values.
-            if( $icon == 'basil' ): ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/basil.png" alt="Basil" />
-            <?php elseif ($icon == 'squirt'): ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/squirt.png" alt="Squirt" />
-            <?php endif; ?>
             
             </div>
         <?php endif; ?>
