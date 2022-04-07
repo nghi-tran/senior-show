@@ -1014,6 +1014,18 @@ footer {
   grid-gap: 1.25em;
   padding: 0em 0;
 }
+.about__container .show-about .show-about__title {
+  grid-column: 1/4;
+}
+.about__container .show-about .show-about__description {
+  grid-column: 5/13;
+}
+.about__container .show-about .show-about__description .show-about__description-paragraph {
+  padding-bottom: 2.5em;
+}
+.about__container .show-about .show-about__description .show-about__description-paragraph h2 {
+  font-size: 1.25em;
+}
 @media screen and (max-width: 800px) {
   .about__container .show-about {
     display: flex;
@@ -1047,16 +1059,15 @@ footer {
 }
 .about__container .show-location .show-location__description-wrapper .show-location__title {
   grid-column: 1/5;
+  padding: 0.75em;
 }
 .about__container .show-location .show-location__description-wrapper .show-location__venue {
   grid-column: 5/8;
   color: #6D6E71;
-  padding-top: 1em;
 }
 .about__container .show-location .show-location__description-wrapper .show-location__address {
   grid-column: 8/13;
   color: #6D6E71;
-  padding-top: 1em;
 }
 .about__container .show-location .show-location__img-wrapper {
   grid-column: 1/13;
@@ -1064,10 +1075,10 @@ footer {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
 }
-.about__container .show-location .show-location__img-wrapper .show-location__img-1 {
-  grid-column: 1/5;
+.about__container .show-location .show-location__img-wrapper .show-location__img {
+  grid-column: 1/9;
 }
-.about__container .show-location .show-location__img-wrapper .show-location__img-1 img {
+.about__container .show-location .show-location__img-wrapper .show-location__img img {
   width: 100%;
 }
 .about__container .show-location .show-location__img-wrapper .show-location__img-2 {
@@ -1094,6 +1105,10 @@ footer {
   .about__container .show-location .show-location__description-wrapper h2 {
     font-size: 1.25em;
   }
+  .about__container .show-location .show-location__description-wrapper .show-location__title {
+    grid-column: 1/5;
+    padding: 0;
+  }
   .about__container .show-location .show-location__description-wrapper .show-location__venue {
     padding-top: 0em;
   }
@@ -1116,16 +1131,15 @@ footer {
 }
 .about__container .show-date .show-date__description-wrapper .show-date__title {
   grid-column: 1/5;
+  padding: 0.75em;
 }
 .about__container .show-date .show-date__description-wrapper .show-date__duration {
   grid-column: 5/8;
   color: #6D6E71;
-  padding-top: 1em;
 }
 .about__container .show-date .show-date__description-wrapper .show-date__time {
   grid-column: 8/13;
   color: #6D6E71;
-  padding-top: 1em;
 }
 .about__container .show-date .show-date__content-wrapper {
   grid-column: 1/13;
@@ -1154,6 +1168,10 @@ footer {
   }
   .about__container .show-date .show-date__description-wrapper h2 {
     font-size: 1.25em;
+  }
+  .about__container .show-date .show-date__description-wrapper .show-date__title {
+    grid-column: 1/5;
+    padding: 0;
   }
   .about__container .show-date .show-date__description-wrapper .show-date__duration {
     padding-top: 0em;

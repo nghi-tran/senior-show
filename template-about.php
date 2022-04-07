@@ -46,22 +46,20 @@ get_header();
 					<div class="show-location">
 						<div class="show-location__description-wrapper">
 							<div class="show-location__title"><h1>Location</h1></div>
-							<div class="show-location__venue"><h2>Venue Name</h2></div>
+							<div class="show-location__venue"><h2>Park Central Mall</h2></div>
 							<div class="show-location__address">
 								<h2>
-								1234 S Main Street <br>
-								Phoenix, AZ, 85281
+								3121 N 3rd Ave <br>
+								Phoenix, AZ, 85013
 								</h2>
 							</div>
 						</div>
 
 						<div class="show-location__img-wrapper">
-							<div class="show-location__img-1">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/show-location-2.png" alt="POV Horizontal Logo" />
+							<div class="show-location__img">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/show-location.png" alt="POV Horizontal Logo" />
 							</div>
-							<div class="show-location__img-2">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/show-location-3.png" alt="POV Horizontal Logo" />
-							</div>
+
 						</div>
 					</div> <!-- closes show__location -->
 
