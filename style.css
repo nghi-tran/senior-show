@@ -469,6 +469,10 @@ big {
   font-size: 125%;
 }
 
+p {
+  letter-spacing: 0.05em;
+}
+
 /* Elements
 --------------------------------------------- */
 body {
@@ -1219,21 +1223,45 @@ footer {
   padding: 2% 2% 5% 2%;
 }
 
-.issue-copy {
-  display: block;
-  grid-column: 5/10;
-}
-
 .designer-image {
-  grid-column: 1/4;
+  grid-column: 1/5;
 }
 .designer-image img {
   width: 100%;
 }
 
+.exhibit-image {
+  grid-column: 1/5;
+}
+.exhibit-image img {
+  width: 100%;
+  height: auto;
+}
+
+.exhibit-content {
+  grid-column: 6/11;
+  grid-row: 1/1;
+}
+.exhibit-content p {
+  font-size: 16px;
+}
+
 .designer-content {
-  display: block;
-  grid-column: 5/10;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  grid-column: 6/11;
+  margin-right: 2em;
+}
+.designer-content h1 {
+  margin: 0;
+}
+.designer-content h3 {
+  margin: 0;
+}
+.designer-content p {
+  font-size: 18px;
+  margin: 0;
 }
 
 .website-button {
@@ -1241,6 +1269,7 @@ footer {
   text-decoration: none;
   color: grey;
   display: block;
+  margin: 0;
 }
 
 .website-button:visited {

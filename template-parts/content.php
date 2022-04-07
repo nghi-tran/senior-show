@@ -19,10 +19,20 @@
             <div id="bioHead">
                 
                 <div class="section-grid"> <!--Issue Section-->
-                    <div class="issue-copy">
+                    <div class="exhibit-image">
+                       <?php 
+                        $image = $bioHead['exhibit_image'];
+                        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image, $size );
+                        }
+                        ?>
+                    </div>
+                   
+                    <div class="exhibit-content">
                         <h1><?php echo $bioHead['social_issue']; ?></h1>
                         
-                        <h4><?php echo $bioHead['issue_catergory']; ?></h4>
+                        <h3><?php echo $bioHead['issue_catergory']; ?></h3>
                         
                         <p><?php echo $bioHead['issue_description']; ?></p>
                     </div>
