@@ -21,3 +21,39 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 1.25em;
+    padding: 2% 2% 5% 2%;
+}
+
+.issue-copy{
+    display: block;
+    grid-column:5/10; 
+}
+
+.designer-image{
+    grid-column: 1/4;
+    
+    img{
+        width: 100%;
+    }
+}
+
+.designer-content{
+    display: block;
+    grid-column: 5/10;
+}
+
+.website-button{
+    margin-top:2em;
+    text-decoration: none;
+    color: grey;
+    display: block;
+}
+
+.website-button:visited{
+    color: grey;
+}
