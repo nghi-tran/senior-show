@@ -50,7 +50,7 @@ header{
         box-shadow: 0 -5px 0px #fff inset;
     }
     
-    @media screen and (max-width:600px){
+    @media screen and (max-width:900px){
         display: inline-block;
         position: relative;
         background: black;
@@ -90,7 +90,7 @@ header{
     display: none !important;
     text-decoration: none;
     
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 900px){
         display: inline-block !important;
         float: right;
         margin: 10px;
@@ -115,7 +115,7 @@ footer {
     width: 100%;
     position: absolute;
     background-color: white;
-    bottom: 0;
+    bottom: -30px;
     
     @media screen and (max-width:600px){
         position: initial;

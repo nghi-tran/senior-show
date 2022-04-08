@@ -703,7 +703,7 @@ header {
 .menu li:hover {
   box-shadow: 0 -5px 0px #fff inset;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .menu {
     display: inline-block;
     position: relative;
@@ -741,7 +741,7 @@ header {
   display: none !important;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .toggle-nav {
     display: inline-block !important;
     float: right;
@@ -767,7 +767,7 @@ footer {
   width: 100%;
   position: absolute;
   background-color: white;
-  bottom: 0;
+  bottom: -30px;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -1224,10 +1224,44 @@ footer {
 }
 
 .section-grid {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-gap: 1.25em;
-  padding: 2% 2% 5% 2%;
+  display: flex;
+  flex-direction: row;
+  gap: 9%;
+  padding: 2% 2% 2% 2%;
+}
+@media screen and (max-width: 1250px) {
+  .section-grid {
+    gap: 5%;
+  }
+  .section-grid .section-image {
+    flex-basis: 35%;
+  }
+  .section-grid .section-content {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .section-grid .section-image {
+    flex-basis: 40%;
+  }
+  .section-grid .section-content p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .section-grid {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 2.5em;
+    width: 75%;
+  }
+  .section-grid .section-image img {
+    width: 100%;
+  }
+  .section-grid .section-content p {
+    font-size: 18px;
+  }
 }
 
 .designer-image {
@@ -1237,19 +1271,22 @@ footer {
   width: 100%;
 }
 
-.exhibit-image {
-  grid-column: 1/5;
+.section-image {
+  flex-basis: 35%;
+  flex-grow: 0;
 }
-.exhibit-image img {
+.section-image img {
+  border: solid 1px grey;
+  border-radius: 10px;
   width: 100%;
   height: auto;
 }
 
-.exhibit-content {
-  grid-column: 6/11;
-  grid-row: 1/1;
+.section-content {
+  flex-basis: 35%;
+  max-height: 100%;
 }
-.exhibit-content p {
+.section-content p {
   font-size: 16px;
 }
 

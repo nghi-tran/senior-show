@@ -19,7 +19,7 @@
             <div id="bioHead">
                 
                 <div class="section-grid"> <!--Issue Section-->
-                    <div class="exhibit-image">
+                    <div class="section-image">
                        <?php 
                         $image = $bioHead['exhibit_image'];
                         $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -29,10 +29,12 @@
                         ?>
                     </div>
                    
-                    <div class="exhibit-content">
+                    <div class="section-content">
                         <h1><?php echo $bioHead['social_issue']; ?></h1>
                         
-                        <h3><?php echo $bioHead['issue_catergory']; ?></h3>
+                        <h3><?php foreach((get_the_category()) as $category) { 
+    echo $category->cat_name . ' '; 
+}  ?></h3>
                         
                         <p><?php echo $bioHead['issue_description']; ?></p>
                     </div>
@@ -40,7 +42,7 @@
                 
                <div class="section-grid"><!--Designer Section-->
                     
-                    <div class="designer-image">
+                    <div class="section-image">
                        <?php 
                         $image = $bioHead['headshot'];
                         $size = 'full'; // (thumbnail, medium, large, full or custom size)
@@ -50,7 +52,7 @@
                         ?>
                     </div>
                     
-                    <div class="designer-content">
+                    <div class="section-content">
                         <h1><?php echo $bioHead['designer_name']; ?></h1>
                         
                         <?php 
