@@ -5,6 +5,12 @@
 .post,
 .page {
 	margin: 0 0 1.5em;
+    position: relative;
+}
+
+#page{
+    position: relative;
+    min-height: 100vh;
 }
 
 .updated:not(.published) {

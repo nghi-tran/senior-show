@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+  height: 100%;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -764,7 +765,7 @@ header {
 
 footer {
   width: 100%;
-  position: fixed;
+  position: absolute;
   background-color: white;
   bottom: 0;
 }
@@ -1199,6 +1200,12 @@ footer {
 .post,
 .page {
   margin: 0 0 1.5em;
+  position: relative;
+}
+
+#page {
+  position: relative;
+  min-height: 100vh;
 }
 
 .updated:not(.published) {
