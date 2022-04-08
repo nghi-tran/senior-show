@@ -405,7 +405,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.8em;
   font-weight: normal;
   letter-spacing: 0.03em;
 }
@@ -998,6 +998,14 @@ footer {
 
 /* About
 --------------------------------------------- */
+.about p {
+  font-size: 1.75em;
+  font-weight: normal;
+  line-height: 1.75em;
+  letter-spacing: 0.03em;
+  margin-top: 0.45em;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1007,12 +1015,27 @@ footer {
 .about__container .about__class-photo {
   grid-column: 1/13;
 }
+@media screen and (max-width: 800px) {
+  .about__container .about__class-photo {
+    display: none;
+  }
+}
+.about__container .about__class-photo--mobile {
+  grid-column: 1/13;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .about__container .about__class-photo--mobile {
+    grid-column: 1/13;
+    display: block;
+  }
+}
 .about__container .show-about {
   grid-column: 1/13;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
-  padding: 0em 0;
+  padding-top: 3em;
 }
 .about__container .show-about .show-about__title {
   grid-column: 1/4;
@@ -1022,9 +1045,10 @@ footer {
 }
 .about__container .show-about .show-about__description .show-about__description-paragraph {
   padding-bottom: 2.5em;
+  color: #6D6E71;
 }
 .about__container .show-about .show-about__description .show-about__description-paragraph h2 {
-  font-size: 1.25em;
+  margin-top: 0;
 }
 @media screen and (max-width: 800px) {
   .about__container .show-about {
@@ -1049,13 +1073,13 @@ footer {
 }
 .about__container .show-location {
   grid-column: 1/13;
+  padding-top: 2em;
 }
 .about__container .show-location .show-location__description-wrapper {
   grid-column: 1/13;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
-  padding-bottom: 2.5em;
 }
 .about__container .show-location .show-location__description-wrapper .show-location__title {
   grid-column: 1/5;
@@ -1074,6 +1098,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-gap: 1.25em;
+  padding-top: 3.25em;
 }
 .about__container .show-location .show-location__img-wrapper .show-location__img {
   grid-column: 1/9;
@@ -1122,6 +1147,7 @@ footer {
 }
 .about__container .show-date {
   grid-column: 1/13;
+  padding-top: 2em;
 }
 .about__container .show-date .show-date__description-wrapper {
   grid-column: 1/13;
