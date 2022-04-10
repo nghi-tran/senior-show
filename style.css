@@ -765,9 +765,10 @@ header {
 
 footer {
   width: 100%;
-  position: absolute;
+  margin: auto;
+  position: relative;
   background-color: white;
-  bottom: -30px;
+  bottom: 0px;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -777,11 +778,17 @@ footer {
   }
 }
 
+#footer--home {
+  position: absolute;
+  bottom: 0px;
+}
+
 .footer__menu {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  padding: 0em 2em;
+  width: 95%;
+  margin: auto;
   color: #6D6E71;
 }
 @media screen and (max-width: 600px) {
@@ -793,6 +800,30 @@ footer {
   .footer__menu p {
     margin: 10px;
   }
+}
+
+.post-navigation {
+  width: 95%;
+  margin: auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: 1s ease;
+}
+.nav-links a:visited {
+  color: grey;
+}
+.nav-links a:hover {
+  color: black;
 }
 
 /* Navigation
@@ -1227,7 +1258,9 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 9%;
-  padding: 2% 2% 2% 2%;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5em;
 }
 @media screen and (max-width: 1250px) {
   .section-grid {

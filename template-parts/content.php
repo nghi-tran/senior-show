@@ -75,8 +75,4 @@
             </div>
         <?php endif; ?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php seniorshow_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
