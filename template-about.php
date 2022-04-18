@@ -74,12 +74,12 @@ get_header();
 							<div class="show-date__title"><h1>Date</h1></div>
 							<div class="show-date__duration">
 								<p>Wednesday, May 4th <br>
-									to Sunday, May 8th
+									to Sunday, May 10th
 								</p>
 							</div>
 							<div class="show-date__time">
 								<p>
-								10:00AM - 5:00PM
+								10:00AM - 4:00PM
 							</p>
 							</div>
 						</div>
@@ -90,7 +90,6 @@ get_header();
 										We are delighted to invite you to share this experience with us
 										as we explore the intricacies of our society and celebrate the
 										work of our graduating seniors.
-
 									</p>
 							</div>
 						</div>

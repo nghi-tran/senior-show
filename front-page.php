@@ -34,7 +34,7 @@ get_header();
 
         <script>
             // The data/time we want to countdown to
-                var countDownDate = new Date("May 5, 2022 16:00:00").getTime();
+                var countDownDate = new Date("May 4, 2022 16:00:00").getTime();
 
                 // Run myfunc every second
                 var myfunc = setInterval(function() {
