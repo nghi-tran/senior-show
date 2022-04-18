@@ -39,8 +39,11 @@ get_header();
 								</p>
 							</div>
 
-							<div class="about__class-photo">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/show-about.jpg" alt="POV Horizontal Logo" />
+							<div class="show-about__class-photo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/show-about.jpg" alt="Image of the Design School" />
+							</div>
+							<div class="show-about__class-photo--mobile">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/show-about.jpg" alt="Image of the Design School" />
 							</div>
 
 						</div>
@@ -73,9 +76,9 @@ get_header();
 						<div class="show-date__description-wrapper">
 							<div class="show-date__title"><h1>Date</h1></div>
 							<div class="show-date__duration">
-								<p>Wednesday, May 4th <br>
+								<h2>Wednesday, May 4th <br>
 									to Sunday, May 10th
-								</p>
+								</h2>
 							</div>
 							<div class="show-date__time">
 								<p>

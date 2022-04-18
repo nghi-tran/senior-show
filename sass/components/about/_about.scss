@@ -49,7 +49,6 @@
       grid-column: 5/13;
 
 
-
       .show-about__description-paragraph {
         padding-bottom: 2.5em;
         color: $color__grey;
@@ -58,16 +57,36 @@
           margin-top: 0;
         }
       }
+
+      .show-about__class-photo {
+        grid-column: 5/13;
+
+        @media screen and (max-width:800px){
+          display: none;
+        }
+      }
+
+      .show-about__class-photo--mobile {
+        grid-column: 1/13;
+        display: none;
+
+        @media screen and (max-width:800px){
+          grid-column: 1/13;
+          display: block;
+        }
+      }
     }
 
     @media screen and (max-width:800px){
         display: flex;
         flex-direction: column;
         gap: 0em;
+        padding-top: 0em;
 
         .show-about__title {
           padding-top: 0;
           margin: 0px;
+          padding-bottom: 1em;
           h1 {
             font-size: $h1-mobile;
           }
@@ -79,8 +98,8 @@
             padding-top: 0em;
             padding-bottom: 0.5em;
 
-            h2 {
-              font-size: $h2-mobile;
+            p {
+              font-size: $p-mobile;
             }
           }
         }
@@ -146,6 +165,7 @@
         display: flex;
         flex-direction: column;
         gap: 0em;
+        padding-top: 0em;
 
         .show-location__description-wrapper {
           display: flex;
@@ -159,10 +179,14 @@
           h2 {
             font-size: $h2-mobile;
           }
+          p {
+            font-size: $p-mobile;
+          }
 
           .show-location__title {
             grid-column: 1/5;
             padding: 0;
+            padding-bottom: 0.5em;
           }
 
           .show-location__venue {
@@ -177,6 +201,7 @@
         .show-location__img-wrapper {
           display: flex;
           flex-direction: column;
+          padding-top: 0em;
         }
     }
   }
@@ -226,6 +251,7 @@
         display: flex;
         flex-direction: column;
         gap: 0em;
+        padding-top: 0em;
 
         .show-date__description-wrapper {
           display: flex;
@@ -243,6 +269,7 @@
           .show-date__title {
             grid-column: 1/5;
             padding: 0;
+            padding-bottom: 0.5em;
           }
 
           .show-date__duration {
@@ -264,6 +291,7 @@
           h2 {
             font-size: $h2-mobile;
           }
+
         }
     }
   }
@@ -278,6 +306,9 @@
       }
       h2 {
         font-size: $h2-mobile;
+      }
+      p {
+        font-size: $p-mobile;
       }
   }
 

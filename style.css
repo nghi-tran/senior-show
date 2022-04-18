@@ -405,9 +405,11 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.75em;
   font-weight: normal;
+  line-height: 1.75em;
   letter-spacing: 0.03em;
+  margin-top: 0.45em;
 }
 
 h3,
@@ -1050,25 +1052,45 @@ footer {
 .about__container .show-about .show-about__description .show-about__description-paragraph h2 {
   margin-top: 0;
 }
+.about__container .show-about .show-about__description .show-about__class-photo {
+  grid-column: 5/13;
+}
+@media screen and (max-width: 800px) {
+  .about__container .show-about .show-about__description .show-about__class-photo {
+    display: none;
+  }
+}
+.about__container .show-about .show-about__description .show-about__class-photo--mobile {
+  grid-column: 1/13;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .about__container .show-about .show-about__description .show-about__class-photo--mobile {
+    grid-column: 1/13;
+    display: block;
+  }
+}
 @media screen and (max-width: 800px) {
   .about__container .show-about {
     display: flex;
     flex-direction: column;
     gap: 0em;
+    padding-top: 0em;
   }
   .about__container .show-about .show-about__title {
     padding-top: 0;
     margin: 0px;
+    padding-bottom: 1em;
   }
   .about__container .show-about .show-about__title h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about__container .show-about .show-about__description .show-about__description-paragraph {
     padding-top: 0em;
     padding-bottom: 0.5em;
   }
-  .about__container .show-about .show-about__description .show-about__description-paragraph h2 {
-    font-size: 1.25em;
+  .about__container .show-about .show-about__description .show-about__description-paragraph p {
+    font-size: 16.5px;
   }
 }
 .about__container .show-location {
@@ -1117,6 +1139,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0em;
+    padding-top: 0em;
   }
   .about__container .show-location .show-location__description-wrapper {
     display: flex;
@@ -1125,14 +1148,18 @@ footer {
     padding-bottom: 1.25em;
   }
   .about__container .show-location .show-location__description-wrapper h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about__container .show-location .show-location__description-wrapper h2 {
-    font-size: 1.25em;
+    font-size: 16.5px;
+  }
+  .about__container .show-location .show-location__description-wrapper p {
+    font-size: 16.5px;
   }
   .about__container .show-location .show-location__description-wrapper .show-location__title {
     grid-column: 1/5;
     padding: 0;
+    padding-bottom: 0.5em;
   }
   .about__container .show-location .show-location__description-wrapper .show-location__venue {
     padding-top: 0em;
@@ -1143,6 +1170,7 @@ footer {
   .about__container .show-location .show-location__img-wrapper {
     display: flex;
     flex-direction: column;
+    padding-top: 0em;
   }
 }
 .about__container .show-date {
@@ -1182,6 +1210,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0em;
+    padding-top: 0em;
   }
   .about__container .show-date .show-date__description-wrapper {
     display: flex;
@@ -1190,14 +1219,15 @@ footer {
     padding-bottom: 1.25em;
   }
   .about__container .show-date .show-date__description-wrapper h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about__container .show-date .show-date__description-wrapper h2 {
-    font-size: 1.25em;
+    font-size: 16.5px;
   }
   .about__container .show-date .show-date__description-wrapper .show-date__title {
     grid-column: 1/5;
     padding: 0;
+    padding-bottom: 0.5em;
   }
   .about__container .show-date .show-date__description-wrapper .show-date__duration {
     padding-top: 0em;
@@ -1210,10 +1240,10 @@ footer {
     flex-direction: column;
   }
   .about__container .show-date .show-date__content-wrapper h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about__container .show-date .show-date__content-wrapper h2 {
-    font-size: 1.25em;
+    font-size: 16.5px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1223,10 +1253,13 @@ footer {
     padding: 20px;
   }
   .about__container h1 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .about__container h2 {
-    font-size: 1.25em;
+    font-size: 16.5px;
+  }
+  .about__container p {
+    font-size: 16.5px;
   }
 }
 
