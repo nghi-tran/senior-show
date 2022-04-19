@@ -5,6 +5,12 @@
 .post,
 .page {
 	margin: 0 0 1.5em;
+    position: relative;
+}
+
+#page{
+    position: relative;
+    min-height: 100vh;
 }
 
 .updated:not(.published) {
@@ -20,4 +26,140 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.section-grid{
+    display:flex;
+    flex-direction: row;
+    gap:9%;
+    width: 95%;
+    margin: auto;
+    margin-top: 5em;
+    
+    @media screen and (max-width:1250px){
+        gap:5%;
+        
+        .section-image{
+            flex-basis: 35%;
+        }
+        
+        .section-content{
+            flex-basis: 50%;
+            
+            h1{
+                line-height: 1em;
+                margin-bottom: 0.5em;
+            }
+            
+            h3, a{
+                margin: 0;
+                margin-top:0.5em;
+            }
+        }
+    }
+    
+    @media screen and (max-width:980px){
+        padding-top: 3%;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        gap:2em;
+        width: 85%;
+        
+        .section-image{
+            flex-basis: 40%;
+        }
+        
+        .section-content{
+            
+            p{
+                font-size: 18.5px;
+            }
+        }
+    }
+    
+    @media screen and (max-width:600px){
+
+
+            .section-image{
+
+                img{
+                    width: 100%;
+                }
+            
+            }
+            
+            .section-content{
+
+                p{
+                    font-size: 16.5px;
+                    margin:0;
+                    margin-bottom: 20px;
+                }
+            }
+    }
+}
+
+.designer-image{
+    grid-column: 1/5;
+    
+    img{
+        width: 100%;
+    }
+}
+
+.section-image{
+    flex-basis: 35%; 
+    flex-grow: 0;
+
+    
+     img{
+        border: solid 1px grey;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+     }
+}
+
+.section-content{
+    flex-basis: 35%;
+    max-height: 100%;
+    
+    p{
+        font-size: 16px;
+    }
+}
+
+
+.designer-content{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    grid-column: 6/11;
+    margin-right: 2em;
+    
+    h1{
+        margin:0;
+    }
+    
+    h3{
+        margin: 0;
+    }
+    
+    p{
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.website-button{
+    margin-top:2em;
+    text-decoration: none;
+    color: grey;
+    display: block;
+    margin: 0;
+}
+
+.website-button:visited{
+    color: grey;
 }
