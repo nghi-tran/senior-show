@@ -816,6 +816,7 @@ footer p {
 .footer__menu img {
   height: 13px;
   width: auto;
+  border-radius: 0;
 }
 @media screen and (max-width: 600px) {
   .footer__menu {
