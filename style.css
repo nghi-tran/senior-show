@@ -794,12 +794,7 @@ footer p {
   position: relative;
   bottom: 0px;
 }
-@media screen and (max-width: 1250px) and (min-height: 1350px) {
-  #footer--post {
-    position: absolute;
-  }
-}
-@media screen and (min-width: 1250px) and (max-height: 1500px) {
+@media screen and (max-width: 1250px) and (min-height: 1000px) {
   #footer--post {
     position: absolute;
   }
