@@ -30,12 +30,12 @@
                     </div>
                    
                     <div class="section-content">
-                        <h1><?php echo $bioHead['social_issue']; ?></h1>
+                        <h1><?php echo $bioHead['social_issue'];?></h1>
                         
                         <h3><?php foreach((get_the_category()) as $category) { 
-    echo $category->cat_name . ' '; 
-}  ?></h3>
-                        
+                            echo $category->cat_name . ' '; }?>
+                        </h3>
+
                         <p><?php echo $bioHead['issue_description']; ?></p>
                     </div>
                 </div>
@@ -75,4 +75,5 @@
             </div>
         <?php endif; ?>
 	</div><!-- .entry-content -->
+	
 </article><!-- #post-<?php the_ID(); ?> -->

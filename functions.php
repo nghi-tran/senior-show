@@ -189,3 +189,15 @@ function tutsplus_burger_menu_scripts() {
   
 }
 add_action( 'wp_enqueue_scripts', 'tutsplus_burger_menu_scripts' );
+
+
+/** Don't add extra p tags */
+function disable_wp_auto_p( $content ) {
+  if ( is_singular( 'page' ) ) {
+    remove_filter( 'the_content', 'wpautop' );
+    remove_filter( 'the_excerpt', 'wpautop' );
+  }
+  return $content;
+}
+add_filter( 'the_content', 'disable_wp_auto_p', 0 );
+
