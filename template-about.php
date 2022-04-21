@@ -28,14 +28,15 @@ get_header();
 						<div class="show-about__description">
 							<div class="show-about__description-paragraph">
 								<p>
-									The Graphic Design Senior Student Association (GDSSA) is the senior
-									class in the Visual Communication Design Program at Arizona State
-									University. We are a resilient group of 44 passionate designers who
-									have persevered through online learning and the pandemic, and are
-									now taking our first steps out into the real world. This year commemorates
-									the 30th Annual Senior Exhibition, the culmination of a year’s worth of
-									research, thinking, and design around social issues we are passionate
-									about to raise awareness and spark conversations.
+									The Graphic Design Senior Student Association (GDSSA) is the senior class
+									in the Visual Communication Design Program at Arizona State University.
+									We are a resilient group of 44 passionate designers who have persevered
+									through online learning and the pandemic, and are now taking our first
+									steps out into the real world. This year commemorates the 30th Annual
+									Senior Exhibition, the culmination of a year’s worth of research, thinking,
+									and design around social issues we are invested in to raise awareness
+									and spark conversations.
+
 								</p>
 							</div>
 
@@ -77,12 +78,12 @@ get_header();
 							<div class="show-date__title"><h1>Date</h1></div>
 							<div class="show-date__duration">
 								<h2>Wednesday, May 4th <br>
-									to Sunday, May 10th
+									to Tuesday, May 10th
 								</h2>
 							</div>
 							<div class="show-date__time">
 								<p>
-								10:00AM - 4:00PM
+								10:00AM &#8211; 4:00PM
 							</p>
 							</div>
 						</div>

@@ -61,6 +61,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
+  height: 100%;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -388,10 +389,9 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: neue-haas-grotesk-display, sans-serif;
   font-style: normal;
 }
 
@@ -469,6 +469,11 @@ ins {
 
 big {
   font-size: 125%;
+}
+
+p {
+  font-weight: 500;
+  letter-spacing: 0.05em;
 }
 
 /* Elements
@@ -652,6 +657,35 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+#donors {
+  width: 85%;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  #donors {
+    width: 90%;
+  }
+}
+
+.donor-header {
+  margin-top: 5%;
+}
+
+.donor-container {
+  margin: 5% 0 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10%;
+}
+@media screen and (max-width: 800px) {
+  .donor-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -700,7 +734,7 @@ header {
 .menu li:hover {
   box-shadow: 0 -5px 0px #fff inset;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .menu {
     display: inline-block;
     position: relative;
@@ -738,7 +772,7 @@ header {
   display: none !important;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .toggle-nav {
     display: inline-block !important;
     float: right;
@@ -762,9 +796,17 @@ header {
 
 footer {
   width: 100%;
-  position: fixed;
+  margin: auto;
+  position: relative;
   background-color: white;
-  bottom: 0;
+  border-top: solid 1px black;
+  bottom: 0px;
+  align-items: center;
+  padding: 10px 0 10px 0;
+}
+footer p {
+  font-size: 13px;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -774,21 +816,93 @@ footer {
   }
 }
 
+#footer--home {
+  position: absolute;
+  bottom: 0px;
+}
+
+#footer--post {
+  position: relative;
+  bottom: 0px;
+}
+@media screen and (max-width: 1250px) and (min-height: 1000px) {
+  #footer--post {
+    position: absolute;
+  }
+}
+@media screen and (max-width: 980px) {
+  #footer--post {
+    position: relative;
+  }
+}
+
 .footer__menu {
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
-  padding: 0em 2em;
+  width: 95%;
+  margin: auto;
   color: #6D6E71;
+}
+.footer__menu img {
+  height: 13px;
+  width: auto;
+  border-radius: 0;
 }
 @media screen and (max-width: 600px) {
   .footer__menu {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding: 5px;
+    gap: 8px;
   }
-  .footer__menu p {
-    margin: 10px;
+}
+
+.post-navigation {
+  width: 95%;
+  margin: auto;
+}
+@media screen and (max-width: 980px) {
+  .post-navigation {
+    width: 85%;
+    margin-bottom: 3em;
+  }
+}
+
+.nav-next, .nav-previous {
+  padding: 10px 20px 10px 20px;
+  border: solid 1px black;
+  border-radius: 0.5em;
+  transition: 0.25s ease;
+}
+
+.nav-next:hover, .nav-previous:hover {
+  background-color: black;
+}
+.nav-next:hover a, .nav-previous:hover a {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5em;
+  text-align: center;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 16.5px;
+  color: black;
+  transition: 0.25s ease;
+}
+@media screen and (max-width: 980px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 3.5em;
+    width: 70%;
+    margin: auto;
   }
 }
 
@@ -1272,6 +1386,12 @@ footer {
 .post,
 .page {
   margin: 0 0 1.5em;
+  position: relative;
+}
+
+#page {
+  position: relative;
+  min-height: 100vh;
 }
 
 .updated:not(.published) {
@@ -1287,6 +1407,116 @@ footer {
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
+}
+
+.section-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 9%;
+  width: 95%;
+  margin: auto;
+  margin-top: 5em;
+}
+@media screen and (max-width: 1250px) {
+  .section-grid {
+    gap: 5%;
+  }
+  .section-grid .section-image {
+    flex-basis: 35%;
+  }
+  .section-grid .section-content {
+    flex-basis: 50%;
+  }
+  .section-grid .section-content h1 {
+    line-height: 1em;
+    margin-bottom: 0.5em;
+  }
+  .section-grid .section-content h3, .section-grid .section-content a {
+    margin: 0;
+    margin-top: 0.5em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .section-grid {
+    padding-top: 3%;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 2em;
+    width: 85%;
+  }
+  .section-grid .section-image {
+    flex-basis: 40%;
+  }
+  .section-grid .section-content p {
+    font-size: 18.5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-grid .section-image img {
+    width: 100%;
+  }
+  .section-grid .section-content p {
+    font-size: 16.5px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.designer-image {
+  grid-column: 1/5;
+}
+.designer-image img {
+  width: 100%;
+}
+
+.section-image {
+  flex-basis: 35%;
+  flex-grow: 0;
+}
+.section-image img {
+  border: solid 1px grey;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.section-content {
+  flex-basis: 35%;
+  max-height: 100%;
+}
+.section-content p {
+  font-size: 16px;
+}
+
+.designer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  grid-column: 6/11;
+  margin-right: 2em;
+}
+.designer-content h1 {
+  margin: 0;
+}
+.designer-content h3 {
+  margin: 0;
+}
+.designer-content p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.website-button {
+  margin-top: 2em;
+  text-decoration: none;
+  color: grey;
+  display: block;
+  margin: 0;
+}
+
+.website-button:visited {
+  color: grey;
 }
 
 /* Comments
