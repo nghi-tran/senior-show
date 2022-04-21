@@ -389,10 +389,9 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: neue-haas-grotesk-display, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: neue-haas-grotesk-display, sans-serif;
   font-style: normal;
 }
 
@@ -473,6 +472,7 @@ big {
 }
 
 p {
+  font-weight: 500;
   letter-spacing: 0.05em;
 }
 
@@ -657,6 +657,35 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+#donors {
+  width: 85%;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  #donors {
+    width: 90%;
+  }
+}
+
+.donor-header {
+  margin-top: 5%;
+}
+
+.donor-container {
+  margin: 5% 0 5% 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10%;
+}
+@media screen and (max-width: 800px) {
+  .donor-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/

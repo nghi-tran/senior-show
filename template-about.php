@@ -77,12 +77,12 @@ get_header();
 							<div class="show-date__title"><h1>Date</h1></div>
 							<div class="show-date__duration">
 								<h2>Wednesday, May 4th <br>
-									to Sunday, May 10th
+									to Tuesday, May 10th
 								</h2>
 							</div>
 							<div class="show-date__time">
 								<p>
-								10:00AM - 4:00PM
+								10:00AM &#8211; 4:00PM
 							</p>
 							</div>
 						</div>
