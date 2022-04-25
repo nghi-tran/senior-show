@@ -7,6 +7,7 @@ h1 {
 	font-weight:600;
 	font-stretch:normal;
 }
+
 h2 {
 	font-size: 1.75em;
 	font-weight: normal;
@@ -14,7 +15,14 @@ h2 {
 	letter-spacing: 0.03em;
 	margin-top: 0.45em;
 }
-h3,
+
+h3 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	line-height: 1.75rem;
+	letter-spacing: 0.03em;
+	margin-top: 0.45em;
+}
 h4,
 h5,
 h6 {

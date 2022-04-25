@@ -9,8 +9,8 @@
 get_header();
 ?>
 
-<main id="donors">
-  
+<main id="primary" class="donors">
+
 <div class="donor-header">
        <h1>Thank you to our donors.</h1>
    </div>
@@ -46,7 +46,7 @@ get_header();
            <p>Erik Spiekermann</p>
            <p>Fame</p>
        </div>
-       
+
         <div class="donor-column">
            <p>Fase Design</p>
            <p>Fisk x Future Fonts</p>
@@ -78,10 +78,10 @@ get_header();
            <p>Nghi Tran</p>
            <p>Nikusha Ugrekhelidze</p>
        </div>
-       
+
         <div class="donor-column">
            <p>Olivia Chen | Chen Studio</p>
-           <p>Park Central</p> 
+           <p>Park Central</p>
            <p>Parker Madison</p>
            <p>Patrick Cheung</p>
            <p>Rachel Adrian</p>

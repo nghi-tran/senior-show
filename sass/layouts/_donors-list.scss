@@ -1,12 +1,12 @@
-#donors{
+.donors{
     width: 85%;
     margin: auto;
-    
-        
+
+
     @media screen and (max-width:800px){
         width: 90%;
     }
-    
+
 }
 
 .donor-header{
@@ -19,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     column-gap: 10%;
-    
+
     @media screen and (max-width:800px){
         flex-direction: column;
         justify-content: flex-start;
@@ -28,5 +28,5 @@
 }
 
 .donor-column{
-    
+
 }

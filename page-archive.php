@@ -7,17 +7,24 @@ get_header(); ?>
 <div id="primary" class="site-content">
 <div id="content" role="main">
 
+	<div class="searchbar">
+		<input id="searchbar" onkeyup="search_listedissues()" type="text" name="search"
+						placeholder="Search Name..">
+	</div>
+
 	<div class="social-issues">
   	<div class="social-issues__left">
       <h1>Social Issues</h1>
-      <p>asdfasdfasdfasdf</p>
+      <p>
+				The list below shows each designer and the social issue
+				they have researched over the past year. Click on the
+				name to learn more about their work.
+			</p>
     </div>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="social-issues__right">
 
-				<input id="searchbar" onkeyup="search_listedissues()" type="text" name="search"
-                placeholder="Search Name..">
 			<?php
 				$cat_args=array(
 					'orderby' => 'name',
@@ -32,9 +39,12 @@ get_header(); ?>
   				$posts=get_posts($args);
 		      if ($posts) {
 						if ($category->term_id != 1) : ?>
-
+							<?php
+								$cat_title_id = (str_replace(' ', '-', strtolower($category->name)));
+								$cat_list_id = $cat_title_id . "-list";
+							?>
 							<div class="social-issues__container">
-								<div class="title-container">
+								<div id="<?php echo $cat_title_id; ?>" class="title-container">
 									<?php $category_icon = get_field('category_icon', $category->taxonomy . '_' . $category->term_id); ?>
 									<?php if( $category_icon ): ?>
 									    <img src="<?php echo $category_icon; ?>" class="social-icon"/>
@@ -44,7 +54,7 @@ get_header(); ?>
 								</div>
 
 								<div class="social-issues__names">
-									<ul class="list">
+									<ul id="<?php echo $cat_list_id; ?>" class="list">
 					       		<?php
 							       foreach($posts as $post) :
 
@@ -96,6 +106,29 @@ function search_listedissues() {
 		}
 	}
 }
+
+ jQuery(document).keypress(function(event){
+ 		if(jQuery('.list').children(':visible').length == 0) {
+ 		   jQuery('#environment').hide();
+ 		}
+});
+
+jQuery(document).keypress(function(event){
+	 if(jQuery('.list').children(':visible').length == 0) {
+			jQuery('#health').hide();
+	 }
+});
+
+// jQuery(document).keypress(function(event){
+// 		jQuery('.list').each(function() {
+// 			if(jQuery(this).children(':visible').length == 0) {
+// 		   jQuery(this).parent().siblings(".title-container").hide();
+// 		 } else if(jQuery(this).children.css(':visible').length > 0) {
+// 			 jQuery(this).parent().siblings(".title-container").css('display','flex');
+// 		 }
+// 		});
+// });
+
 
 Array.from(document.querySelectorAll('social-issues__container'), function (elem) {
         elem.addEventListener('click', function hideContent(e) {
