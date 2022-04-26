@@ -832,6 +832,11 @@ footer p {
   position: absolute;
   bottom: 0px;
 }
+@media screen and (max-width: 600px) {
+  #footer--home {
+    position: relative;
+  }
+}
 
 #footer--post {
   position: relative;
@@ -1073,6 +1078,7 @@ footer p {
 
 .splash__video {
   margin: auto;
+  mix-blend-mode: multiply;
 }
 .splash__video video {
   width: 60vw;
