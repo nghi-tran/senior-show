@@ -14,7 +14,7 @@
 	<footer id="footer--post" class="post-footer">
 
 		<div class="footer__menu">
-			<p> Designed by GDSSA </p>
+			<p> VCD Senior Class </p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/footer__logo.svg" alt="footer logo" />
 			<p> © VCD Senior Exhibition 2022 </p>
 		</div><!-- .site-info -->

@@ -1,19 +1,41 @@
+#show-map:hover{
+    cursor: pointer;
+}
+
 
 .about {
   p {
-    font-size: 1.75em;
+    font-size: 1.5em;
   	font-weight: normal;
     line-height: 1.75em;
   	letter-spacing: 0.03em;
-    margin-top: 0.45em;
+    margin: 0em;
+    
+    @media screen and (max-width:800px){
+        font-size: 16.25px;
+    }
+    
+  }
+  
+  h2{
+      font: 1.5em;
+      margin: 0;
   }
 }
 
 .about__container {
   display: grid;
+  width: 90%;
+  margin: auto;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-gap: 1.25em;
-  padding: 2% 2% 5% 2%;
+  column-gap: 1.25em;
+  row-gap: $about-row;
+  padding: 2% 2% 10% 2%;
+  
+  @media screen and (max-width:800px){
+      width: 95%;
+      row-gap:$about-row--mobile;
+  }
 
   .about__class-photo {
     grid-column: 1/13;
@@ -38,8 +60,16 @@
 
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    grid-gap: 1.25em;
-    padding-top: 3em;
+    column-gap: 1.25em;
+    row-gap: $about-row;
+    
+    img{
+        margin-top: $about-row;
+        
+        @media screen and (max-width:800px){
+            margin-top:$about-row--mobile;
+        }
+    }
 
     .show-about__title {
       grid-column: 1/4;
@@ -50,7 +80,6 @@
 
 
       .show-about__description-paragraph {
-        padding-bottom: 2.5em;
         color: $color__grey;
 
         h2 {
@@ -108,8 +137,13 @@
 
 
   .show-location {
+    display: grid;
     grid-column: 1/13;
-    padding-top: 2em;
+    row-gap:$about-row;
+    
+    @media screen and (max-width:800px){
+        row-gap:$about-row--mobile;
+    }
 
 
     .show-location__description-wrapper {
@@ -121,14 +155,11 @@
 
       .show-location__title {
         grid-column: 1/5;
-        padding: 0.75em;
       }
 
       .show-location__venue {
         grid-column: 5/8;
         color: $color__grey;
-
-
       }
 
       .show-location__address {
@@ -144,7 +175,6 @@
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-gap: 1.25em;
-      padding-top: 3.25em;
 
       .show-location__img {
         grid-column: 1/9;
@@ -171,7 +201,11 @@
           display: flex;
           flex-direction: column;
           gap: 0em;
-          padding-bottom: 1.25em;
+          padding-bottom: $about-row;
+          
+          @media screen and (max-width:800px){
+              padding-bottom: $about-row--mobile;
+          }
 
           h1 {
             font-size: $h1-mobile;
@@ -208,9 +242,9 @@
 
 
   .show-date {
+    display: grid;
     grid-column: 1/13;
-    padding-top: 2em;
-
+    row-gap:6.25em;
     .show-date__description-wrapper {
       grid-column: 1/13;
 
@@ -220,12 +254,19 @@
 
       .show-date__title {
         grid-column: 1/5;
-        padding: 0.75em;
       }
 
       .show-date__duration {
         grid-column: 5/8;
         color: $color__grey;
+        
+        @media screen and (max-width:1200px){
+            padding-right: 40%;
+        }
+        
+        @media screen and (max-width:1150px){
+            padding-right: 15%;
+        }
       }
 
       .show-date__time {
