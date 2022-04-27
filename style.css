@@ -412,7 +412,14 @@ h2 {
   margin-top: 0.45em;
 }
 
-h3,
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  letter-spacing: 0.03em;
+  margin-top: 0.45em;
+}
+
 h4,
 h5,
 h6 {
@@ -474,6 +481,11 @@ big {
 p {
   font-weight: 500;
   letter-spacing: 0.05em;
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.75rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.45em;
 }
 
 /* Elements
@@ -657,12 +669,12 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-#donors {
+.donors {
   width: 85%;
   margin: auto;
 }
 @media screen and (max-width: 800px) {
-  #donors {
+  .donors {
     width: 90%;
   }
 }
@@ -819,6 +831,11 @@ footer p {
 #footer--home {
   position: absolute;
   bottom: 0px;
+}
+@media screen and (max-width: 600px) {
+  #footer--home {
+    position: relative;
+  }
 }
 
 #footer--post {
@@ -1061,6 +1078,7 @@ footer p {
 
 .splash__video {
   margin: auto;
+  mix-blend-mode: multiply;
 }
 .splash__video video {
   width: 60vw;
@@ -1693,46 +1711,67 @@ footer p {
 
 /* Social Issue Index
 --------------------------------------------- */
+<<<<<<< HEAD
+=======
+.searchbar #searchbar {
+  margin-left: 10%;
+  width: 80%;
+}
+
+>>>>>>> 8f611365945c5af23a24f6179a1d933e4b405e75
 .social-issues {
   width: 100%;
   display: flex;
+  padding: 2% 2% 5% 2%;
 }
 .social-issues .social-issues__left {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(30% - 2rem);
+  flex-basis: calc(27% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
   margin: 1rem;
+  width: 50%;
+}
+.social-issues .social-issues__left p {
+  padding-top: 1rem;
 }
 .social-issues .social-issues__right {
   flex-basis: calc(70% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
   margin: 1rem;
+  margin-left: 5em;
 }
-.social-issues .social-issues__container {
+.social-issues .social-issues__right .social-issues__container {
   flex-wrap: wrap;
   margin: 0;
 }
-.social-issues .social-issues__names {
+.social-issues .social-issues__right .social-issues__container .title-container {
+  display: flex;
+  align-items: center;
+}
+.social-issues .social-issues__right .social-issues__container .title-container h1 {
+  display: flex;
+  align-items: center;
+}
+.social-issues .social-issues__right .social-issues__container .title-container .social-icon {
+  width: 3rem;
+}
+.social-issues .social-issues__right .social-issues__container .social-issues__names {
   flex-direction: column;
   flex-basis: calc(50% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
+  margin-left: 0;
 }
-.social-issues .title-container {
-  display: flex;
-  align-items: center;
+.social-issues .social-issues__right .social-issues__container .social-issues__names a {
+  text-decoration: none;
 }
-.social-issues .title-container h1 {
-  display: flex;
-  align-items: center;
+.social-issues .social-issues__right .social-issues__container .social-issues__names a:visited {
+  color: black;
 }
-.social-issues .social-icon {
-  width: 10%;
-}
-.social-issues ul {
+.social-issues .social-issues__right .social-issues__container .social-issues__names ul {
   display: flex;
   flex-wrap: wrap;
   columns: 2;
@@ -1740,19 +1779,21 @@ footer p {
   -moz-columns: 2;
   list-style: none;
   justify-content: space-between;
+  padding: 0;
 }
-.social-issues li {
+.social-issues .social-issues__right .social-issues__container .social-issues__names li {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
   flex-basis: calc(50% - 2rem);
+  text-decoration: none;
+  padding-top: 1rem;
 }
-.social-issues .list {
-  padding-left: 10%;
+.social-issues .social-issues__right .social-issues__container .social-issues__names li h3 {
+  margin-bottom: -7px;
 }
-.social-issues #searchbar {
-  margin-left: 10%;
-  width: 80%;
+.social-issues .social-issues__right .social-issues__container .social-issues__names .list {
+  padding-left: 0;
 }
 
 /*--------------------------------------------------------------

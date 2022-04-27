@@ -12,7 +12,7 @@ get_header();
 				<div class="about__container">
 
 					<div class="about__class-photo">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/class-photo.png" alt="POV Horizontal Logo" />
+							<img src="<?php echo get_template_directory_uri(); ?>/img/class-photo-1.png" alt="POV Horizontal Logo" />
 					</div>
 					<div class="about__class-photo--mobile">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/class-photo-mobile.png" alt="POV Horizontal Logo" />

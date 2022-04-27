@@ -80,7 +80,7 @@ get_header();
                 </div>
             </div>
             <div class=subtitle>
-                <p class="subtitle__copy">Arizona State Universtiy</p>
+                <p class="subtitle__copy">Arizona State University</p>
                 <p class="subtitle__copy">Visual Communication Design</p>
                 <p class="subtitle__copy">Senior Exhibition 2022</p>
             </div>
