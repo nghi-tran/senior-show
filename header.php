@@ -38,17 +38,27 @@
         ?>
     </nav>
     
-    <script src="js/burger-menu.js"></script>
 <!--
-    <div class="menu">
-       <input type="checkbox" class="navbar__toggle-menu">
-       <div class="navbar__hamburger"></div>
-        <ul class="navbar__menu">
-            <li><a href=""> About </a></li>
-            <li><a href="">Social Issues</a></li>
-            <li><a href="">Donors</a></li>
-        </ul>
-    </div>
--->
+    <script>
+        jQuery( 'p' ).each(function() {
+            if (jQuery(this).html().length > 0) {
+                jQuery(this).hide();
+            }
+        });
 
+        alert("is there a god");
+    </script>
+-->
+       <script>
+       jQuery( document ).ready(function() {
+            jQuery( 'p' ).each(function() {
+                if (jQuery(this).html() === "&nbsp;") {
+                    jQuery(this).hide();
+                }
+            });
+        });
+
+        
+    </script>
+    
 </header>

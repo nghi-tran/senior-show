@@ -201,3 +201,5 @@ function disable_wp_auto_p( $content ) {
 }
 add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
+remove_filter( 'the_content', 'wpautop' );
+

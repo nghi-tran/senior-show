@@ -902,7 +902,7 @@ footer p {
 
 .nav-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin-bottom: 5em;
   text-align: center;
@@ -1711,14 +1711,11 @@ footer p {
 
 /* Social Issue Index
 --------------------------------------------- */
-<<<<<<< HEAD
-=======
 .searchbar #searchbar {
   margin-left: 10%;
   width: 80%;
 }
 
->>>>>>> 8f611365945c5af23a24f6179a1d933e4b405e75
 .social-issues {
   width: 100%;
   display: flex;

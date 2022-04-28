@@ -86,9 +86,7 @@ get_header();
 						<div class="show-date__content-wrapper">
 							<div class="show-date__img-1">
 									<p>
-										We are delighted to invite you to share this experience with us
-										as we explore the intricacies of our society and celebrate the
-										work of our graduating seniors.
+										Please join us on Friday May 6th from 6–9pm for a special POV Celebration. All the students will be present, so come check it out to learn more about each social issue. You can also attend during any of the times listed above.
 									</p>
 							</div>
 						</div>

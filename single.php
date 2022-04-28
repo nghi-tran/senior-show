@@ -17,14 +17,18 @@ get_header();
 			the_post();
 
 			get_template_part( 'template-parts/content', get_post_type() );
+            
+            the_post_navigation( array(
+            'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'seniorshow' ) . '</span> <span class="nav-title">%title</span>',
+            'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'seniorshow' ) . '</span> <span class="nav-title">%title</span>',
+            'in_same_term'               => true,
+//            'taxonomy'                   => __( 'post_tag' ),
+//            'screen_reader_text' => __( 'Continue Reading' ),
+        ) );
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'seniorshow' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'seniorshow' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
 
+
+        
 
 		endwhile; // End of the loop.
 		?>
