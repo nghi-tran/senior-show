@@ -107,27 +107,35 @@ function search_listedissues() {
 	}
 }
 
- jQuery(document).keypress(function(event){
- 		if(jQuery('.list').children(':visible').length == 0) {
- 		   jQuery('#environment').hide();
- 		}
-});
+//  jQuery(document).keypress(function(event){
+//  		if(jQuery('.list').children(':visible').length == 0) {
+//  		   jQuery('#environment').hide();
+//  		}
+// });
 
-jQuery(document).keypress(function(event){
-	 if(jQuery('.list').children(':visible').length == 0) {
-			jQuery('#health').hide();
-	 }
-});
 
-// jQuery(document).keypress(function(event){
-// 		jQuery('.list').each(function() {
+//  jQuery(document).keypress(function(event){
+//  		jQuery('.list').each(function() {
 // 			if(jQuery(this).children(':visible').length == 0) {
 // 		   jQuery(this).parent().siblings(".title-container").hide();
-// 		 } else if(jQuery(this).children.css(':visible').length > 0) {
-// 			 jQuery(this).parent().siblings(".title-container").css('display','flex');
+// 		 } else {
+// 			 jQuery(this).parent().siblings(".title-container").show();
 // 		 }
 // 		});
 // });
+
+jQuery('#searchbar').on('input', function(event){
+	 jQuery('.list').each(function() {
+		 if(jQuery(this).children(':visible').length == 0) {
+			jQuery(this).parent().siblings(".title-container").hide();
+		} else {
+			jQuery(this).parent().siblings(".title-container").show();
+		}
+	 });
+});
+
+
+
 
 
 Array.from(document.querySelectorAll('social-issues__container'), function (elem) {
