@@ -1712,8 +1712,9 @@ footer p {
 /* Social Issue Index
 --------------------------------------------- */
 .searchbar #searchbar {
-  margin-left: 10%;
   width: 80%;
+  margin-bottom: 3%;
+  padding: 1%;
 }
 
 .social-issues {
@@ -1791,6 +1792,46 @@ footer p {
 }
 .social-issues .social-issues__right .social-issues__container .social-issues__names .list {
   padding-left: 0;
+}
+.social-issues .searchbar {
+  width: auto;
+}
+@media screen and (max-width: 1100px) {
+  .social-issues {
+    flex-direction: column;
+    width: 100%;
+  }
+  .social-issues h1 {
+    font-size: 2em;
+  }
+  .social-issues #searchbar {
+    margin: 1em 0 1em 0;
+    width: 100%;
+  }
+  .social-issues .social-issues__names {
+    margin-bottom: 3em;
+  }
+  .social-issues .social-issues__left {
+    width: 90%;
+    margin: auto;
+  }
+  .social-issues .social-issues__left p {
+    font-size: 16.5px;
+    margin: 0;
+    padding: 0;
+  }
+  .social-issues .social-issues__right {
+    display: row;
+    margin: auto;
+    width: 90%;
+  }
+  .social-issues .social-issues__right .social-issues__names .list {
+    flex-direction: column;
+    margin: 0;
+  }
+  .social-issues .social-issues__right .social-issues__names .list p {
+    margin-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------

@@ -203,3 +203,15 @@ add_filter( 'the_content', 'disable_wp_auto_p', 0 );
 
 remove_filter( 'the_content', 'wpautop' );
 
+function custom_pre_get_posts($query) {
+    // validate
+    if(!is_admin() && $query->is_main_query()) {
+
+        if(is_archive()) {
+            $query->set('orderby', 'title'); // order posts by title
+            $query->set('order', 'ASC'); // and in ascending order
+        }
+    }
+}
+add_action('pre_get_posts', 'custom_pre_get_posts');
+
