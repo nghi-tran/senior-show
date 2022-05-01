@@ -698,6 +698,96 @@ textarea {
   }
 }
 
+.main--tracker {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 80vh;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .main--tracker {
+    height: 75vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main--tracker {
+    padding-top: 3em;
+    height: 60vh;
+  }
+}
+
+.splash-subtitle--tracker {
+  height: 100%;
+  margin: 0 !important;
+  width: auto !important;
+}
+
+.splash_video--tracker {
+  width: 80%;
+}
+
+.subtitle__copy--tracker {
+  line-height: 1.85vw;
+  font-size: 1vw;
+}
+@media screen and (max-width: 1110px) {
+  .subtitle__copy--tracker {
+    line-height: 2.5vw;
+    font-size: 1.75vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subtitle__copy--tracker {
+    font-size: 3.5vw;
+    line-height: 4.5vw;
+  }
+}
+
+.tracker__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+  height: 80vh;
+}
+
+.tracker__characters {
+  display: block;
+  width: 70%;
+}
+@media (hover: none) {
+  .tracker__characters {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .tracker__characters {
+    display: none;
+  }
+}
+
+.splash__container--tracker {
+  /*Switch to video if viewport is narrow*/
+  /*Switch to video if touch device*/
+}
+@media (hover: hover) {
+  .splash__container--tracker {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .splash__container--tracker {
+    display: flex;
+  }
+}
+@media (hover: none) {
+  .splash__container--tracker {
+    display: flex;
+  }
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -831,10 +921,11 @@ footer p {
 #footer--home {
   position: absolute;
   bottom: 0px;
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   #footer--home {
-    position: relative;
+    position: absolute;
   }
 }
 

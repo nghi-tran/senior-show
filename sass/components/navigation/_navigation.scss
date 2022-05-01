@@ -136,9 +136,10 @@ footer {
 #footer--home{
     position: absolute;
     bottom: 0px;
+    margin: 0;    
     
     @media screen and (max-width:600px){
-        position: relative;
+        position: absolute;
     }
 }
 
