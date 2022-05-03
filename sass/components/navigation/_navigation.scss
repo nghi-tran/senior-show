@@ -57,13 +57,13 @@ header{
         text-align: right;
         
         ul{
-            display: none;
+            display: block;
             position: absolute;
             overflow: auto;
             top: 20px;
             padding-top: 20px;
             right: 0px;
-            height: 100vh;
+            height: 0;
             z-index: 999;
             background: black;
             
@@ -83,6 +83,11 @@ header{
             }
         }
     }
+}
+
+.open{
+    display: block;
+    height: 100vh !important;
 }
 
 .toggle-nav{

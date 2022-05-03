@@ -37,18 +37,6 @@
             'container_class' => 'navbar__navigation' ) ); 
         ?>
     </nav>
-    
-<!--
-    <script>
-        jQuery( 'p' ).each(function() {
-            if (jQuery(this).html().length > 0) {
-                jQuery(this).hide();
-            }
-        });
-
-        alert("is there a god");
-    </script>
--->
        <script>
        jQuery( document ).ready(function() {
             jQuery( 'p' ).each(function() {

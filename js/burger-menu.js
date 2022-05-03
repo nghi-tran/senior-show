@@ -1,8 +1,11 @@
 jQuery(document).ready(function() {
     jQuery('.toggle-nav').click(function(e) {
-        jQuery('.menu ul').slideToggle(500);
-  
         e.preventDefault();
-    });
-     
+        if(jQuery('.menu ul').hasClass('open')) {
+            jQuery('.menu ul').removeClass('open');
+        } 
+        else{
+            jQuery('.menu ul').addClass('open');        
+        }
+    });  
 });

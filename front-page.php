@@ -73,7 +73,7 @@ get_header();
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/desktop_animation.mp4" type="video/mp4">
                     </video>
 
-                    <video id="video--mobile" autoplay loop muted>
+                    <video id="video--mobile" autoplay loop muted playsinline>
                         <source src= "<?php echo get_template_directory_uri(); ?>/vid/mobile_animation.mp4" type="video/mp4">
                     </video>
 
