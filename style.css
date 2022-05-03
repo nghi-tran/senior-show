@@ -1650,19 +1650,20 @@ footer p {
 /* Social Issue Index
 --------------------------------------------- */
 .searchbar #searchbar {
-  margin-left: 10%;
-  width: 80%;
+  width: 96%;
+  padding: 1%;
+  margin: 2%;
 }
 
 .social-issues {
   width: 100%;
   display: flex;
-  padding: 2% 2% 5% 2%;
+  padding: 0% 2% 5% 2%;
 }
 .social-issues .social-issues__left {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(27% - 2rem);
+  flex-basis: calc(29% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
   margin: 1rem;
@@ -1672,11 +1673,11 @@ footer p {
   padding-top: 1rem;
 }
 .social-issues .social-issues__right {
-  flex-basis: calc(70% - 2rem);
+  flex-basis: calc(50% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
   margin: 1rem;
-  margin-left: 5em;
+  margin-left: 25em;
 }
 .social-issues .social-issues__right .social-issues__container {
   flex-wrap: wrap;
