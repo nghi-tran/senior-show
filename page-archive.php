@@ -12,7 +12,7 @@ get_header(); ?>
                 <h1>Social Issues</h1>
                 <p>The list below shows each designer and the social issue they have researched over the past year. Click on the name to learn more about their work.</p>
             </div>
-            
+
             <?php while ( have_posts() ) : the_post(); ?>
 
             <div class="social-issues__right">
@@ -71,11 +71,11 @@ get_header(); ?>
                 ?>
             </div><!-- .entry-content -->
         </div>
-        
+
         <!--social-issues__right -->
         <?php endwhile; // end of the loop. ?>
     </div>
-    
+
     <!--ends social_issue-->
 </div><!-- #content -->
 </div><!-- #primary -->

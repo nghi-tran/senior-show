@@ -4,11 +4,11 @@ body {
 
 
 .searchbar {
-  
-  #searchbar {
-      width: 80%;
-      margin-bottom: 3%;
+
+  #searchbar{
+      width: 96%;
       padding: 1%;
+      margin-bottom: 3%;
   }
 
 }
@@ -34,11 +34,11 @@ body {
   }
 
   .social-issues__right {
-      flex-basis: calc(70% - 2rem);
+      flex-basis: calc(50% - 2rem);
       flex-shrink: 0;
       flex-grow: 0;
       margin: 1rem;
-      margin-left: 5em;
+      margin-left: 25em;
 
       .social-issues__container {
           flex-wrap: wrap;
@@ -106,54 +106,54 @@ body {
           }
       }
   }
-  
+
   .searchbar{
       width: auto;
   }
-  
+
 @media screen and (max-width:1100px){
     flex-direction: column;
     width: 100%;
-    
+
     h1{
         font-size: 2em;
     }
-    
+
     #searchbar{
         margin: 1em 0 1em 0;
         width: 100%;
     }
 
     .social-issues__names{
-        margin-bottom: 3em;   
+        margin-bottom: 3em;
     }
-    
+
     .social-issues__left{
         width: 90%;
         margin: auto;
-        
+
         p{
             font-size: 16.5px;
             margin: 0;
             padding: 0;
         }
     }
-    
+
     .social-issues__right{
         display: row;
         margin: auto;
         width: 90%;
-        
+
         .social-issues__names{
-            
+
             .list{
                 flex-direction: column;
                 margin: 0;
-                
+
                 p{
                     margin-bottom: 0;
                 }
-                
+
             }
         }
     }

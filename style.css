@@ -1808,9 +1808,9 @@ footer p {
 /* Social Issue Index
 --------------------------------------------- */
 .searchbar #searchbar {
-  width: 80%;
-  margin-bottom: 3%;
+  width: 96%;
   padding: 1%;
+  margin-bottom: 3%;
 }
 
 .social-issues {
@@ -1831,11 +1831,11 @@ footer p {
   padding-top: 1rem;
 }
 .social-issues .social-issues__right {
-  flex-basis: calc(70% - 2rem);
+  flex-basis: calc(50% - 2rem);
   flex-shrink: 0;
   flex-grow: 0;
   margin: 1rem;
-  margin-left: 5em;
+  margin-left: 25em;
 }
 .social-issues .social-issues__right .social-issues__container {
   flex-wrap: wrap;
